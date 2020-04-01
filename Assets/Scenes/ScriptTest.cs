@@ -13,7 +13,7 @@ public class Boss
     {
 
 
-        for (int i = 0; i < 10; i++)
+        for (int i = 0; i <= 10; i++)
         {
             mp -= 5;
             Debug.Log("魔法攻撃をした。残りMPは" + mp + "。");
