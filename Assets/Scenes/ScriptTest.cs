@@ -6,16 +6,22 @@ using UnityEngine;
 //Bossクラス
 public class Boss
 {
-    private int mp = 53;
+    
     
     //Magic関数
     public void Magic(int mp)
     {
-        Debug.Log("魔法攻撃をした。残りMPは" + mp + "。");
-        // 残りmpを減らす
-        mp -= 5;
 
-        if(mp < 5)
+
+        for (int i = 0; i < 10; i++)
+        {
+            mp -= 5;
+            Debug.Log("魔法攻撃をした。残りMPは" + mp + "。");
+            
+        }
+
+
+        if (mp < 5)
         {
             Debug.Log("MPが足りないため魔法が使えない。");
         }
@@ -27,7 +33,7 @@ public class Boss
 
 public class ScriptTest : MonoBehaviour
 {
-    private int mp;
+    private int mp = 53;
 
 
 
